@@ -7,3 +7,9 @@
 [submodule ".zsh/plugins/z"]
 	path = .zsh/plugins/z
 	url = https://github.com/rupa/z
+[submodule ".zsh/plugins/profile"]
+	path = .zsh/plugins/profile
+	url = https://github.com/aaronjsutton/profile
+[submodule ".zsh/pure"]
+	path = .zsh/pure
+	url = git@github.com:aaronjsutton/pure.git

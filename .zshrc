@@ -1,7 +1,6 @@
-# .zshrc
+# .zshrc - version 1.0
 # Aaron Sutton 
-# Version 1.0
-# A fine-tuned shell for power users.
+# A light and fine-tuned zsh shell.
 
 # -- Prompt --
 
@@ -14,7 +13,7 @@ zstyle :prompt:pure:path color cyan
 prompt pure
 
 # -- Builtin Settings --
-bindkey -v
+bindkey -v # vi mode - of course.
 
 # -- Plugins --
 source ~/.zsh/plugins/z/z.sh # z - jump around.
@@ -26,10 +25,9 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # elegant auto
 alias celar=clear # Because I don't know how to type.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' # Config repo - https://www.atlassian.com/git/tutorials/dotfiles
 
-# -- OS-Specific Sources --
-export PATH=/opt/apache-maven-3.6.3/bin:$PATH # maven 
-export PATH=/Library/PostgreSQL/13/bin:$PATH # postgres
-export PATH=~/.npm-global/bin:$PATH # npm
+# -- OS-Specific Configuration --
+os=`uname`
+source ~/.zshrc-${(L)os}
 
-# -- Other Configuration --
+# -- Miscellaneous --
 export GPG_TTY=$(tty) # GPG hack...?
