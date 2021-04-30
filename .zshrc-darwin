@@ -3,6 +3,8 @@
 export PATH=/opt/apache-maven-3.6.3/bin:$PATH # maven 
 export PATH=/Library/PostgreSQL/13/bin:$PATH # postgres
 export PATH=~/.npm-global/bin:$PATH # npm
+export PATH="$PATH:$HOME/.rvm/bin" # rvm
 
 source ~/.zsh/plugins/profile/profile.sh # profile command.
+
 
