@@ -18,4 +18,7 @@ This approach was taken from this [awesome article from Atlassian](https://www.a
 To install, just follow the steps at the end of this article. **Make sure you backup any existing dotfiles**, unless you're really
 brave. 
 
-Once you're there, run `config submodules init; config submodules update` to pull down plugins that this configuration uses.
+Once you're there, run `config submodule init; config submodule update` to pull down plugins that this configuration uses.
+
+### Todo
+- [] Add `.vim` directory and vim plugins as submodules
