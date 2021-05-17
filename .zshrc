@@ -5,12 +5,10 @@
 # -- Prompt --
 
 # Ever-so-slightly modified version of pure - I wanted the loop.
-fpath+=~/.zsh/pure
+fpath+=~/.zsh/typewritten
 autoload -U promptinit; promptinit
-PURE_PROMPT_SYMBOL="╰─"
-PURE_PROMPT_VICMD_SYMBOL="╰┤"
-zstyle :prompt:pure:path color cyan
-prompt pure
+TYPEWRITTEN_CURSOR="terminal"
+prompt typewritten
 
 # -- Builtin Settings --
 bindkey -v # vi mode - of course.

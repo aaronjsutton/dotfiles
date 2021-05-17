@@ -13,3 +13,6 @@
 [submodule ".zsh/pure"]
 	path = .zsh/pure
 	url = git@github.com:aaronjsutton/pure.git
+[submodule ".zsh/typewritten"]
+	path = .zsh/typewritten
+	url = https://github.com/reobin/typewritten.git
