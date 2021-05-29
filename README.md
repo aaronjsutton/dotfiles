@@ -13,12 +13,8 @@ Power tools I keep handy:
 
 ## Usage
 
-There's no fancy setup script that will symlink your `$HOME` like its life depends on it.
-This approach was taken from this [awesome article from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).
+There's no fancy setup script. This approach was taken from this [article from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).
 To install, just follow the steps at the end of this article. **Make sure you backup any existing dotfiles**, unless you're really
 brave. 
 
 Once you're there, run `config submodule init; config submodule update` to pull down plugins that this configuration uses.
-
-### Todo
-- [] Add `.vim` directory and vim plugins as submodules
