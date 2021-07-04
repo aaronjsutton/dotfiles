@@ -2,6 +2,7 @@
 syn on
 se et ai si ts=2 sts=2 sw=2
 se re=0
+se modelines=5
 
 " My abbreviations.
 ab author Aaron Sutton - aaron@aaronjsutton.com
