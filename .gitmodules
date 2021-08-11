@@ -16,3 +16,18 @@
 [submodule ".zsh/typewritten"]
 	path = .zsh/typewritten
 	url = https://github.com/reobin/typewritten.git
+[submodule ".vim/pack/aaronsutton/start/yajs.vim"]
+	path = .vim/pack/aaronsutton/start/yajs.vim
+	url = https://github.com/othree/yajs.vim
+[submodule ".vim/pack/aaronsutton/start/ale"]
+	path = .vim/pack/aaronsutton/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule ".vim/pack/aaronsutton/start/vim-svelte"]
+	path = .vim/pack/aaronsutton/start/vim-svelte
+	url = https://github.com/evanleck/vim-svelte
+[submodule ".vim/pack/aaronsutton/start/vim-elixir"]
+	path = .vim/pack/aaronsutton/start/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir
+[submodule ".vim/pack/aaronsutton/start/haskell-vim"]
+	path = .vim/pack/aaronsutton/start/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
