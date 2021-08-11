@@ -52,9 +52,13 @@ filetype indent on
 hi ALEErrorSign ctermfg=red
 hi ALEWarningSign ctermfg=yellow
 
-hi Error ctermfg=red ctermbg=NONE cterm=bold
+set omnifunc=ale#completion#OmniFunc
+set completeopt=menu,menuone,popup,noselect,noinsert
+let g:ale_completion_max_suggestions=12
+
+hi Error ctermfg=red ctermbg=red cterm=bold
 hi ALEError cterm=underline 
 hi ALEWarning ctermbg=NONE
-let g:ale_completion_enabled = 1
 let g:ale_sign_error = "●"
 let g:ale_sign_warning = "●"
+let g:ale_completion_autoimport = 1
