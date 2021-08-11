@@ -5,7 +5,7 @@ se re=0
 se modelines=5
 
 " My abbreviations.
-ab author Aaron Sutton - aaron@aaronjsutton.com
+iab cc Copyright (c) 2021 Aaron Joseph Sutton. Licensed under the license.<ESC>2Bea
 
 " Italic support for macOS terminal.
 let &t_ZH="\e[3m"
@@ -55,6 +55,6 @@ hi ALEWarningSign ctermfg=yellow
 hi Error ctermfg=red ctermbg=NONE cterm=bold
 hi ALEError cterm=underline 
 hi ALEWarning ctermbg=NONE
-
+let g:ale_completion_enabled = 1
 let g:ale_sign_error = "●"
 let g:ale_sign_warning = "●"

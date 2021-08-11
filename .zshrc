@@ -28,5 +28,6 @@ os=`uname`
 source ~/.zshrc-${(L)os}
 
 # -- Miscellaneous --
-export GPG_TTY=$(tty) # GPG hack...?
+export GPG_TTY=$TTY # GPG hack...?
 
+export PATH="$HOME/.poetry/bin:$PATH"
