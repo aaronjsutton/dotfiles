@@ -18,6 +18,7 @@ let mapleader=","
 nnoremap <leader>. <C-z>
 nnoremap <leader><leader> :e# <cr>
 nnoremap <leader>ev :e $MYVIMRC <cr>
+nnoremap <leader>sp :set spell! <cr>
 nnoremap <leader>sv :source $MYVIMRC <cr>
 nnoremap <leader>cd :cd %:p:h <cr>
 nnoremap <leader>' :vsp 
