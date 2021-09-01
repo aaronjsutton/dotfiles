@@ -8,3 +8,5 @@ source ~/.zsh/plugins/profile/profile.sh # profile command.
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/local/opt/libpq/lib/pkgconfig
 export PATH="$PATH:$HOME/.rvm/bin" # rvm
+# See notes for upgraded SSH agent workaround on Big Sur
+export SSH_AUTH_SOCK="~/.ssh/agent"
