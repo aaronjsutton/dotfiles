@@ -42,6 +42,7 @@ hi MatchParen ctermbg=NONE cterm=underline
 " Split-related settings for macOS terminal.
 hi VertSplit ctermbg=288
 hi StatusLine ctermbg=none cterm=bold
+hi Folded ctermbg=none
 hi StatusLineNC ctermbg=none cterm=none
 hi SignColumn ctermbg=none
 se fcs=stl:─,stlnc:─,vert:│
