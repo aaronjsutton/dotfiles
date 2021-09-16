@@ -34,3 +34,6 @@
 [submodule ".vim/pack/aaronsutton/start/vim-pug"]
 	path = .vim/pack/aaronsutton/start/vim-pug
 	url = https://github.com/digitaltoad/vim-pug
+[submodule ".vim/pack/aaronsutton/start/yats.vim"]
+	path = .vim/pack/aaronsutton/start/yats.vim
+	url = https://github.com/HerringtonDarkholme/yats.vim
