@@ -4,7 +4,6 @@
 
 # -- Prompt --
 
-# Ever-so-slightly modified version of pure - I wanted the loop.
 fpath+=~/.zsh/typewritten
 autoload -U promptinit; promptinit
 TYPEWRITTEN_CURSOR="terminal"

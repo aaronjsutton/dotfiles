@@ -37,3 +37,6 @@
 [submodule ".vim/pack/aaronsutton/start/yats.vim"]
 	path = .vim/pack/aaronsutton/start/yats.vim
 	url = https://github.com/HerringtonDarkholme/yats.vim
+[submodule ".vim/pack/aaronsutton/start/vim-markdown"]
+	path = .vim/pack/aaronsutton/start/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown

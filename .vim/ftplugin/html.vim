@@ -7,3 +7,5 @@ set spell
 
 nnoremap <leader>sf qqqggqq]s1z=@qq@q
 nnoremap <leader>ss z=1<CR><CR>
+
+

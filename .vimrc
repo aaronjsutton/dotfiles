@@ -46,6 +46,10 @@ hi Folded ctermbg=none
 hi StatusLineNC ctermbg=none cterm=none
 hi SignColumn ctermbg=none
 se fcs=stl:─,stlnc:─,vert:│
+hi Conceal ctermbg=none
+
+" Custom filetypes
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 
 filetype plugin on
 filetype indent on
@@ -53,10 +57,6 @@ filetype indent on
 " ALE-specific settings.
 hi ALEErrorSign ctermfg=red
 hi ALEWarningSign ctermfg=yellow
-
-set omnifunc=ale#completion#OmniFunc
-set completeopt=menu,menuone,popup,noselect,noinsert
-let g:ale_completion_max_suggestions=12
 
 hi Error ctermfg=red ctermbg=red cterm=bold
 hi ALEError cterm=underline 
