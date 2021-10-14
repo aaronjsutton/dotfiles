@@ -1,6 +1,6 @@
 " Base editor settings.
 syn on
-se et ai si ts=2 sts=2 sw=2
+se et ai si ts=2 sts=2 sw=2 noexpandtab
 se re=0
 se modelines=5
 
