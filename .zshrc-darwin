@@ -9,3 +9,7 @@ source ~/.zsh/plugins/profile/profile.sh # profile command.
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 export PKG_CONFIG_PATH=/usr/local/opt/libpq/lib/pkgconfig
 export PATH="$PATH:$HOME/.rvm/bin" # rvm
+
+function gpg-start () {
+  gpg-connect-agent updatestartuptty /bye > /dev/null
+}
