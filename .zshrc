@@ -22,6 +22,11 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # elegant auto
 alias celar=clear # Because I don't know how to type.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' # Config repo - https://www.atlassian.com/git/tutorials/dotfiles
 
+# -- Custom Functions --
+fpath+=~/.zsh/functions/
+autoload -Uz auth-code
+autoload -Uz gpg-start
+
 # -- OS-Specific Configuration --
 os=`uname`
 source ~/.zshrc-${(L)os}
