@@ -1,0 +1,4 @@
+gpg-start () {
+  gpg-connect-agent updatestartuptty /bye > /dev/null
+	gpg --card-status
+}

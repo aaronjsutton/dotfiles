@@ -1,0 +1,3 @@
+function auth-code() {
+	ykman oath accounts code -s $1 | pbcopy
+}
