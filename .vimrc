@@ -11,27 +11,23 @@ iab cc Copyright (c) 2021 Aaron Joseph Sutton. Licensed under the license.<ESC>2
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 
-set path+=**
-
-" Custom mappings.
+" Leader settings and double-leader hotkey.
 let mapleader=","
-nnoremap <leader>. <C-z>
 nnoremap <leader><leader> :e# <cr>
-nnoremap <leader>ev :e $MYVIMRC <cr>
-nnoremap <leader>sp :set spell! <cr>
-nnoremap <leader>sv :source $MYVIMRC <cr>
-nnoremap <leader>cd :cd %:p:h <cr>
-nnoremap <leader>' :vsp 
-nnoremap <leader>" :sp 
 
-" ALE custom mappings.
-nnoremap <leader>aw :ALEFix <cr>
-nnoremap <leader>an :ALENext <cr>
-nnoremap <leader>aN :ALEPrevious <cr>
+" Directory mappings.
+nnoremap <leader>d :cd %:p:h <cr>
+
+" .vimrc edit mappings.
+nnoremap <leader>ve :e $MYVIMRC <cr>
+nnoremap <leader>vl :source $MYVIMRC <cr>
+
+" Spelling mappings.
+nnoremap <leader>s :set spell! <cr>
+
+" Ale mappings.
 nnoremap <leader>af :ALEFix <cr>
 nnoremap <leader>ae :ALEGoToDefinition <cr>
-nnoremap <leader>asp :ALEGoToDefinitionInSplit <cr>
-nnoremap <leader>avs  :ALEGoToDefinitionInVSplit <cr>
 
 " Colorscheme setttings.
 set background=dark
@@ -58,9 +54,14 @@ filetype indent on
 hi ALEErrorSign ctermfg=red
 hi ALEWarningSign ctermfg=yellow
 
-hi Error ctermfg=red ctermbg=red cterm=bold
+hi Error cterm=underline cterm=bold
 hi ALEError cterm=underline 
 hi ALEWarning ctermbg=NONE
+hi SpellBad ctermbg=none ctermfg=red cterm=underline
+
 let g:ale_sign_error = "●"
 let g:ale_sign_warning = "●"
 let g:ale_completion_autoimport = 1
+
+set exrc
+set secure
