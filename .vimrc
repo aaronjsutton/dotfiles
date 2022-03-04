@@ -5,7 +5,7 @@ se re=0
 se modelines=5
 
 " My abbreviations.
-iab cc Copyright (c) 2021 Aaron Joseph Sutton. Licensed under the license.<ESC>2Bea
+iab cc Copyright (c) 2022 Aaron J. Sutton. Licensed under the license.<ESC>2Bea
 
 " Italic support for macOS terminal.
 let &t_ZH="\e[3m"
@@ -14,18 +14,21 @@ let &t_ZR="\e[23m"
 " Leader settings and double-leader hotkey.
 let mapleader=","
 nnoremap <leader><leader> :e# <cr>
+nnoremap <leader>ev :e $MYVIMRC <cr>
+nnoremap <leader>sp :set spell! <cr>
 
-" Directory mappings.
-nnoremap <leader>d :cd %:p:h <cr>
+nnoremap <leader>c0 :set conceallevel=0 <cr>
+nnoremap <leader>c1 :set conceallevel=1 <cr>
+nnoremap <leader>c2 :set conceallevel=2 <cr>
 
-" .vimrc edit mappings.
-nnoremap <leader>ve :e $MYVIMRC <cr>
-nnoremap <leader>vl :source $MYVIMRC <cr>
+nnoremap <leader>sv :source $MYVIMRC <cr>
+nnoremap <leader>cd :cd %:p:h <cr>
+nnoremap <leader>' :vsp 
+nnoremap <leader>" :sp 
 
-" Spelling mappings.
-nnoremap <leader>s :set spell! <cr>
-
-" Ale mappings.
+" ALE custom mappings.
+nnoremap <leader>an :ALENext <cr>
+nnoremap <leader>aN :ALEPrevious <cr>
 nnoremap <leader>af :ALEFix <cr>
 nnoremap <leader>ae :ALEGoToDefinition <cr>
 
