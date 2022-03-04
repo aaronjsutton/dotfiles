@@ -5,7 +5,7 @@ se re=0
 se modelines=5
 
 " My abbreviations.
-iab cc Copyright (c) 2021 Aaron Joseph Sutton. Licensed under the license.<ESC>2Bea
+iab cc Copyright (c) 2022 Aaron J. Sutton. Licensed under the license.<ESC>2Bea
 
 " Italic support for macOS terminal.
 let &t_ZH="\e[3m"
@@ -19,13 +19,17 @@ nnoremap <leader>. <C-z>
 nnoremap <leader><leader> :e# <cr>
 nnoremap <leader>ev :e $MYVIMRC <cr>
 nnoremap <leader>sp :set spell! <cr>
+
+nnoremap <leader>c0 :set conceallevel=0 <cr>
+nnoremap <leader>c1 :set conceallevel=1 <cr>
+nnoremap <leader>c2 :set conceallevel=2 <cr>
+
 nnoremap <leader>sv :source $MYVIMRC <cr>
 nnoremap <leader>cd :cd %:p:h <cr>
 nnoremap <leader>' :vsp 
 nnoremap <leader>" :sp 
 
 " ALE custom mappings.
-nnoremap <leader>aw :ALEFix <cr>
 nnoremap <leader>an :ALENext <cr>
 nnoremap <leader>aN :ALEPrevious <cr>
 nnoremap <leader>af :ALEFix <cr>
