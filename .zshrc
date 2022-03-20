@@ -19,6 +19,7 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # elegant auto
 
 # -- Custom Aliases --
 
+alias ls=ls -G
 alias celar=clear # Because I don't know how to type.
 alias ls="ls -G"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' # Config repo - https://www.atlassian.com/git/tutorials/dotfiles
