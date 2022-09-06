@@ -1,6 +1,6 @@
 # Dotfiles
 
-> About as close as I can get to directly interfacing with the machines.
+> Terminal configuration so good, even CMU uses it. :cool:
 
 This is my shell configuration, use it at your own peril.
 
