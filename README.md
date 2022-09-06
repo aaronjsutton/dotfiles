@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my shell configuration, use it at your own peril :skull:.
+> Terminal configuration so good, even CMU uses it :sunglasses:
 
 ## Configuration Files
 
@@ -11,7 +11,7 @@ Power tools I keep handy:
 
 ## Usage
 
-There's no fancy setup script. This approach was taken from this [article from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).
+This approach was taken from this [article from Atlassian](https://www.atlassian.com/git/tutorials/dotfiles).
 To install, follow the steps at the end of the article. **Make sure to backup any existing dotfiles**, unless you're really
 brave. 
 
