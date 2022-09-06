@@ -1,6 +1,6 @@
 # Dotfiles
 
-> Terminal configuration so good, even CMU uses it. :cool:
+> Terminal configuration so good, even CMU uses it. :sunglasses:
 
 This is my shell configuration, use it at your own peril.
 
