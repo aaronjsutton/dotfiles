@@ -1,4 +1,4 @@
-# .zshrc - version 1.0
+# .zshrc
 # Aaron Sutton 
 # A light and fine-tuned zsh shell.
 
@@ -12,7 +12,7 @@ prompt typewritten
 # -- Builtin Settings --
 bindkey -v # vi mode - of course.
 
-# -- Plugins --
+# -- ZSH Plugins --
 source ~/.zsh/plugins/z/z.sh # z - jump around.
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # syntax highlighting in the shell.
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # elegant autocompletions.
@@ -22,21 +22,23 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh # elegant auto
 alias ls=ls -G
 alias celar=clear # Because I don't know how to type.
 alias ls="ls -G"
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME' # Config repo - https://www.atlassian.com/git/tutorials/dotfiles
+# Alias config to the home directory Git repo.
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias vz='vim $(fzf)'
 
 # -- Custom Functions --
 fpath+=~/.zsh/functions/
-autoload -Uz auth-code
 autoload -Uz gpg-start
+
+# -- FZF --
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 # -- OS-Specific Configuration --
 os=`uname`
 source ~/.zshrc-${(L)os}
 
-# -- Miscellaneous --
+# -- GPG / SSH Configuration --
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
-
-export GPG_TTY=$TTY # GPG hack...?
-
-export PATH="$HOME/.poetry/bin:$PATH"
+export GPG_TTY=$TTY

@@ -1,8 +1,6 @@
 # Dotfiles
 
-> About as close as I can get to directly interfacing with the machines.
-
-This is my shell configuration, use it at your own peril.
+This is my shell configuration, use it at your own peril :skull:.
 
 ## Configuration Files
 

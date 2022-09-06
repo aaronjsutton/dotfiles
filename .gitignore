@@ -1,2 +1,17 @@
+// By default, ignore everything.
+*
+
+// Allow most dotfiles
+!.*.?
+
+// Vim
+!/.vim/
+
+// Prevent weird recursion by ignoring the git directory.
 .cfg
+
+// Ignore Vim spellcheck binary files.
 *.add.spl
+
+// Ignore Google Configuration
+/.google
