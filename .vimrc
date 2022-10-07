@@ -1,12 +1,14 @@
 " Base editor settings.
 syn on
+set number
 se et ai si ts=2 sts=2 sw=2 noexpandtab
 se re=0
 se modelines=5
 
 " My abbreviations.
-iab cce Copyright © 2022 SimpL Labs, Inc. All rights reserved.<ESC>
-iab ccb Copyright © 2022 Sutton Brothers & Company. All rights reserved.<ESC>
+iab cc Copyright © 2022. All rights reserved.<ESC>F©3f2a
+iab sim SimpL Fit, Inc<ESC>
+iab sbc Sutton Brothers & Company
 
 " Italic support for macOS terminal.
 let &t_ZH="\e[3m"
