@@ -1,7 +1,5 @@
 # Dotfiles
 
-> Terminal configuration so good, even CMU uses it :sunglasses:
-
 ## Configuration Files
 
 Power tools I keep handy:
